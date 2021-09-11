@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  www:
+    build: 
+      context: ./www
+      dockerfile: Dockerfile.dev
+    ports:
+      - 2000:80
+    volumes:
+      - ./www:/usr/share/nginx/html
