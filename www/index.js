@@ -6,6 +6,8 @@ const $url = document.getElementById('url')
 const $json = document.getElementById('json')
 const $text = document.getElementById('text')
 
+const DEFAULT_URL = window.location.href + 'sample.json'
+
 // events handlers
 
 $url.addEventListener('keydown', onUrlKeyDown)
@@ -19,6 +21,10 @@ function setError({ message }) {
 
 function clearError() {
   $error.innerText = ''
+}
+
+function setUrl(url) {
+  $url.value = url
 }
 
 function getUrl() {
@@ -60,6 +66,8 @@ function ajax(url) {
 
 function onUrlKeyDown({ ctrlKey, key }) {
   if (key === 'Enter') {
+    const url = getUrl()
+    if (!url) setUrl(DEFAULT_URL)
     clearError()
     renderURL(getUrl())
   }
