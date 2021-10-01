@@ -27,6 +27,7 @@ button {
 
 pre {
   font-family: monospace;
+  font-size: 0.75rem;
 }
 
 .container {
@@ -42,9 +43,6 @@ pre {
 .title {
   color: #666666;
   padding: 1rem 0;
-}
-
-.jumbotron {
 }
 
 .subtitle {
