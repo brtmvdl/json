@@ -10,3 +10,7 @@
 * Add Docker environment
 * Add JSON file for sample
 * Remove useless files
+
+## 1.0.2
+
+* Add a current URL on keydown with Enter key
