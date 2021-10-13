@@ -32,7 +32,7 @@ function getUrl() {
 }
 
 function setJson(json) {
-  $json.value = json
+  $json.value = stringifyJSON(json)
 }
 
 function getJson() {
@@ -92,7 +92,7 @@ function renderJson(json) {
   renderText(json)
 }
 
-function renderText(text) {
+function stringifyJSON (text) {
   let json = {}
 
   try {
@@ -101,6 +101,9 @@ function renderText(text) {
     json = null
   }
 
-  const renderedText = JSON.stringify(json, null, 4)
-  setText(renderedText)
+  return JSON.stringify(json, null, 4)
+}
+
+function renderText(text) {
+  setText(stringifyJSON(text))
 }
