@@ -53,6 +53,10 @@ pre {
   margin-top: 1rem;
 }
 
+.error {
+  color: #ff0000;
+}
+
 .input {
   margin-bottom: 1rem;
 }
