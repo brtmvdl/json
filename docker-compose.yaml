@@ -1,11 +1,9 @@
 version: '3'
 
 services:
-  www:
-    build: 
-      context: ./www
-      dockerfile: Dockerfile.dev
-    ports:
-      - 2000:80
+  upload:
+    image: tmvdl/node:surge
+    working_dir: '/app'
     volumes:
-      - ./www:/usr/share/nginx/html
+      - '.:/app'
+
