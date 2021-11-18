@@ -1,2 +1,0 @@
-
-[ ] Quando o usuário pressionar ENTER no campo URL e o campo estiver vazio, escreva "http://json.tarsis.cc/sample.json" no campo URL e apresente o resultado nos outros campos.
