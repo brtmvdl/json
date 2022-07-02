@@ -1,5 +1,3 @@
-FROM nginx:1.21-alpine
+FROM nginx:alpine
 
-WORKDIR /usr/share/nginx/html
-
-COPY . .
+COPY . /usr/share/nginx/html
